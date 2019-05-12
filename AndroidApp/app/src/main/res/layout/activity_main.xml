@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+        <Button
+            android:id="@+id/btn_start_location_updates"
+            android:layout_width="@dimen/logo_w_h"
+            android:layout_height="@dimen/logo_w_h"
+            android:layout_gravity="center_horizontal"
+            android:background = "@drawable/roundedbutton"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logoo"
+            android:text="@string/start_updates" />
+       <!-- <ImageView
+            android:layout_width="@dimen/logo_w_h"
+            android:layout_height="@dimen/logo_w_h"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/logoo" />-->
+
+
+
+        <!--  Stand Owner Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+
+            <EditText android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Stand Owner" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!--Stand Number-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+
+            <EditText android:id="@+id/standnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Stand Number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!--Area stand is in-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+
+            <EditText android:id="@+id/standarea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Stand Area" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!--phone number-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+
+            <EditText android:id="@+id/phonenum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:hint="Phone Number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Stand Allocation date-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+
+            <EditText android:id="@+id/allodate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:hint="When stand was allocated" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Meter Number -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/meternumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Meter reading" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Stand paid up Label -->
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+
+            <EditText android:id="@+id/payment_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Was the stand paid for[Yes/No]" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <!-- Water paid up Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+
+            <EditText android:id="@+id/water_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Is water connected [Yes/No]" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Sewer Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+
+            <EditText android:id="@+id/sewer_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Is sewer connected[Yes/No]" />
+        </android.support.design.widget.TextInputLayout>
+        <!-- Road Type Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+
+            <EditText android:id="@+id/road_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Are roads tarred?[Yes/No]" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <!--<Button
+            android:id="@+id/btn_stop_location_updates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:enabled="false"
+            android:text="@string/stop_updates" />-->
+
+        <Button
+            android:id="@+id/btn_get_last_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/get_last_location" />
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:text="Location updates will be received only when app is foreground" />-->
+
+        <TextView
+            android:id="@+id/location_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#333"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/updated_on"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textSize="11dp" />
+
+        <!-- Signup Button -->
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_save"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:text="Submit"/>
+
+
+    </LinearLayout>
+</ScrollView>
