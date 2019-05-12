@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/tf.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <link rel="stylesheet" href="./css/bootstrap-responsive.css">
+    <script type="text/javascript" src="./js/jquery.min.js"></script><!-- Required-js -->
+    <script src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./css/js.min.js"></script>
+    <link rel="stylesheet" href="./css/tf.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script><!-- Required-js -->
+    <script src="./js/bootstrap.min.js"></script><!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+    <script type="text/javascript" src="./css/js.min.js"></script><!-- Required-js -->
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <title>iCollect Data</title>
+</head>
+
+<body style="background-image:url('./img/data.jpg'); background-size:cover; background-repeat:no-repeat;">
+    <!-- header -->
+    <header>
+        <div class="tf-container" style="background-color:#1d2120; color:white;">
+            <!-- navigation -->
+            <nav class="navbar navbar-default">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="tf-logo" style="">
+                        <!--<h1><a href="#">iLOC</a></h1>-->
+                        <img src="./img/logo.png" alt="" style="height:50px; width:50px; margin-top:5px; ">
+                    </div>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a class="active" href="./index.html">Home</a></li>
+                        <li><a class="scroll" href="adduser.html">Create Users</a></li>
+
+
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </nav>
+            <div class="clearfix"></div>
+            <!-- //navigation -->
+        </div>
+    </header>
+     <a href="./index.html"><input type="button" value="Go Back" class="btn btn-primary" style="margin:5%;"></a>
+    <!-- //header -->
+    <div class="tf-container">
+        <h1 style="text-align:center; color:white;">Detailed Results</h1>
+
+        <div class="tf-row-padding">
+     <div class="tf-row">
+         <!-- <div class="tf-row-padding tf-right tf-half">
+    
+                <a href="" style="width:10%;"><i class="fa fa-search "></i></a><input type="search" name="" value="" class="tf-input"
+                    placeholder="Search" style="width:90%;">
+            </div> -->
+         <br /><br /><br />
+         <table class="table table-hover table-responsive even"
+             style="width: 100%; background-color: rgba(255, 255, 255, 0.479);">
+             <thead>
+                 <tr>
+                     <th> <i class="fa fa-key" aria-hidden="true"></i> NAME</th>
+                     <th><i class="fa fa-map-marker" aria-hidden="true"></i> AREA NAME</th>
+                     <th> <i class="fa fa-user-circle" aria-hidden="true"></i> STAND NUMBER</th>
+                     <th><i class="fa fa-calendar-times-o" aria-hidden="true"></i> DATE REGISTERED</th>
+                     <th><i class="fa fa-bookmark-o" aria-hidden="true"></i> METER READING</th>
+                     <th><i class="fa fa-phone-o" aria-hidden="true"></i> PHONE NUMBER</th>
+                     <th><i class="fa fa-location-arrow" aria-hidden="true"></i> LOCATION</th>
+                     
+                 </tr>
+             </thead>
+             <tbody id="table_body" class="table table-hover table-responsive even">
+
+             </tbody>
+
+         </table>
+
+         <table class="table table-hover table-responsive even"
+             style="width: 100%; background-color: rgba(255, 255, 255, 0.479);">
+             <thead>
+                 <tr>
+                     <th> <i class="fa fa-key" aria-hidden="true"></i> NAME</th>
+                     <th><i class="fa fa-map-marker" aria-hidden="true"></i> SEWER CONNECTED?</th>
+                     <th> <i class="fa fa-user-circle" aria-hidden="true"></i> STAND PAID?</th>
+                     <th><i class="fa fa-calendar-times-o" aria-hidden="true"></i>TARRED ROADS?</th>
+                     <th><i class="fa fa-bookmark-o" aria-hidden="true"></i> WATER CONNECTED?</th>
+                     
+                 </tr>
+             </thead>
+             <tbody id="detailed" class="table table-hover table-responsive even">
+
+             </tbody>
+
+         </table>
+
+
+
+     </div>
+
+     </div>
+
+
+     </div>
+
+     <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase.js"></script>
+     <script>
+         // Initialize Firebase
+         var config = {
+             apiKey: "AIzaSyBajGTFQxQIt0sJyh4mBxrN2Qh-_q4ecTg",
+             authDomain: "hit400.firebaseapp.com",
+             databaseURL: "https://hit400.firebaseio.com",
+             projectId: "hit400",
+             storageBucket: "hit400.appspot.com",
+             messagingSenderId: "1078215589688"
+         };
+         firebase.initializeApp(config);
+     </script>
+
+     <script src="application.js"></script>
+     <script src="https://code.jquery.com/"></script>
+
+
+     </body>
+
+     </html>
